@@ -1,0 +1,2 @@
+# GeniAI
+GeniAI Slack bot 
