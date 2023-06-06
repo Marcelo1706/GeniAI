@@ -1,0 +1,4 @@
+-i https://pypi.org/simple
+python-dotenv==1.0.0
+slack-bolt==1.18.0
+slack-sdk==3.21.3
