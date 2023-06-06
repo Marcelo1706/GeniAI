@@ -42,14 +42,14 @@ def message_any(message, say, client):
                             
        
         if len(messageFromUser)<3 and re.match(companyFormat, messageFromUser[1]):#Returns info to slack
-            #say(f"Your asking for company{message} info")
-            print(f"Your asking for  {messageFromUser[1]} ")
+            say(f"You are asking for company{messageFromUser[1]} info")
+            print(f"You are asking for  {messageFromUser[1]} ")
         elif (len(messageFromUser)==3) and (re.match(companyFormat, messageFromUser[1])) and  ("mailto:" in  messageFromUser[2]):#Retursn Info to Slack and send info Users Email 
 
-            #say(f"Your asking for company{message} info")
-            print(f"Your asking for  {messageFromUser[1]} info and send it to {email} account")
+            say(f"You are asking for company{messageFromUser[1]} info and send it to {email} account")
+            print(f"You are asking for  {messageFromUser[1]} info and send it to {email} account")
         else:
-            #say(f"Sorry, I can not understand that instruction")
+            say(f"Sorry, I can not understand that instruction")
             print("Sorry, I can not understand that instruction")
         
            
